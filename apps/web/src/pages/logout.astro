@@ -1,0 +1,15 @@
+---
+import { apiRequest } from '~/lib/apiRequest'
+
+try {
+  await apiRequest('/auth/logout', {
+    method: 'POST'
+  })
+
+  Astro.cookies.delete('auth_token')
+} catch (error) {
+  // Silently handle logout errors
+}
+
+return Astro.redirect('/')
+---
