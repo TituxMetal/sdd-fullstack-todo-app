@@ -11,3 +11,20 @@ export type ApiResponse<T = unknown> = {
   /** Optional HTTP status code */
   status?: number
 }
+
+/**
+ * Specific error type for better error handling
+ */
+export type ApiError = {
+  message: string
+  status: number
+  code?: string
+}
+
+/**
+ * Configuration options for API requests
+ */
+export type ApiConfig = {
+  timeout?: number
+  headers?: Record<string, string>
+}

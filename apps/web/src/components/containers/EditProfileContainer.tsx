@@ -43,21 +43,19 @@ export const EditProfileContainer = ({ userData }: EditProfileContainerProps) =>
   const handleSubmit = form.handleSubmit(async (values: UpdateProfileSchema) => {
     setServerError(null)
 
-    const result = await updateProfile(values)
+    try {
+      const updatedUser = await updateProfile(values)
+      setCurrentUser(updatedUser)
+      setIsEditing(false)
 
-    if (!result.success || !result.data) {
-      setServerError(result.message || 'Update failed')
-      return
+      form.reset({
+        username: updatedUser.username,
+        firstName: updatedUser.firstName || '',
+        lastName: updatedUser.lastName || ''
+      })
+    } catch (error) {
+      setServerError(error instanceof Error ? error.message : 'Update failed')
     }
-
-    setCurrentUser(result.data)
-    setIsEditing(false)
-
-    form.reset({
-      username: result.data.username,
-      firstName: result.data.firstName || '',
-      lastName: result.data.lastName || ''
-    })
   })
 
   if (!isEditing) {
