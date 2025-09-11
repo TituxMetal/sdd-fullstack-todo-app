@@ -1,7 +1,6 @@
 # Constitution Update Checklist
 
-When amending the constitution (`/memory/constitution.md`), ensure all dependent documents are
-updated to maintain consistency.
+When amending the constitution (`/memory/constitution.md`), ensure all dependent documents are updated to maintain consistency.
 
 ## Templates to Update
 
@@ -93,5 +92,4 @@ Last sync check: 2025-07-16
 
 ---
 
-_This checklist ensures the constitution's principles are consistently applied across all project
-documentation._
+*This checklist ensures the constitution's principles are consistently applied across all project documentation.*

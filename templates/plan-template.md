@@ -1,7 +1,7 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link] **Input**: Feature
-specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
 ## Execution Flow (/plan command scope)
 
@@ -40,17 +40,15 @@ specification from `/specs/[###-feature-name]/spec.md`
 **Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
 **Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
 **Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION] **Project Type**:
-[single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS
-CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS
-CLARIFICATION]  
+**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: [single/web/mobile - determines source structure]  
+**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
+**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
 
-_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
+*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
 **Simplicity**:
 
@@ -166,7 +164,7 @@ ios/ or android/
 
 ## Phase 1: Design & Contracts
 
-_Prerequisites: research.md complete_
+*Prerequisites: research.md complete*
 
 1. **Extract entities from feature spec** → `data-model.md`:
    - Entity name, fields, relationships
@@ -195,11 +193,11 @@ _Prerequisites: research.md complete_
    - Keep under 150 lines for token efficiency
    - Output to repository root
 
-**Output**: data-model.md, /contracts/\*, failing tests, quickstart.md, agent-specific file
+**Output**: data-model.md, /contracts/*, failing tests, quickstart.md, agent-specific file
 
 ## Phase 2: Task Planning Approach
 
-_This section describes what the /tasks command will do - DO NOT execute during /plan_
+*This section describes what the /tasks command will do - DO NOT execute during /plan*
 
 **Task Generation Strategy**:
 
@@ -222,7 +220,7 @@ _This section describes what the /tasks command will do - DO NOT execute during 
 
 ## Phase 3+: Future Implementation
 
-_These phases are beyond the scope of the /plan command_
+*These phases are beyond the scope of the /plan command*
 
 **Phase 3**: Task execution (/tasks command creates tasks.md)  
 **Phase 4**: Implementation (execute tasks.md following constitutional principles)  
@@ -230,16 +228,16 @@ _These phases are beyond the scope of the /plan command_
 
 ## Complexity Tracking
 
-_Fill ONLY if Constitution Check has violations that must be justified_
+*Fill ONLY if Constitution Check has violations that must be justified*
 
-| Violation                  | Why Needed         | Simpler Alternative Rejected Because |
-| -------------------------- | ------------------ | ------------------------------------ |
-| [e.g., 4th project]        | [current need]     | [why 3 projects insufficient]        |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient]  |
+| Violation | Why Needed | Simpler Alternative Rejected Because |
+|-----------|------------|-------------------------------------|
+| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
+| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
 
 ## Progress Tracking
 
-_This checklist is updated during execution flow_
+*This checklist is updated during execution flow*
 
 **Phase Status**:
 
@@ -258,5 +256,4 @@ _This checklist is updated during execution flow_
 - [ ] Complexity deviations documented
 
 ---
-
-_Based on Constitution v2.1.1 - See `/memory/constitution.md`_
+*Based on Constitution v2.1.1 - See `/memory/constitution.md`*

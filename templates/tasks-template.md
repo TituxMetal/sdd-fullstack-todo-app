@@ -1,7 +1,7 @@
 # Tasks: [FEATURE NAME]
 
-**Input**: Design documents from `/specs/[###-feature-name]/` **Prerequisites**: plan.md (required),
-research.md, data-model.md, contracts/
+**Input**: Design documents from `/specs/[###-feature-name]/`
+**Prerequisites**: plan.md (required), research.md, data-model.md, contracts/
 
 ## Execution Flow (main)
 
@@ -111,14 +111,16 @@ Task: "Integration test auth in tests/integration/test_auth.py"
 
 ## Task Generation Rules
 
-_Applied during main() execution_
+*Applied during main() execution*
 
 1. **From Contracts**:
    - Each contract file → contract test task [P]
    - Each endpoint → implementation task
+
 2. **From Data Model**:
    - Each entity → model creation task [P]
    - Relationships → service layer tasks
+
 3. **From User Stories**:
    - Each story → integration test [P]
    - Quickstart scenarios → validation tasks
@@ -129,7 +131,7 @@ _Applied during main() execution_
 
 ## Validation Checklist
 
-_GATE: Checked by main() before returning_
+*GATE: Checked by main() before returning*
 
 - [ ] All contracts have corresponding tests
 - [ ] All entities have model tasks
